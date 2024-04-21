@@ -1,0 +1,46 @@
+GET http://localhost:8000/user
+
+###
+POST http://localhost:8000/user
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "jhone@gmail.com",
+    "image": "tseyt"
+}
+###
+GET  http://localhost:8000/post
+###
+GET  http://localhost:8000/user/priyanshugevra@gmail.com
+###
+POST http://localhost:8000/post
+Content-Type: application/json
+
+{
+    "postText":"name",
+    "createdAt":"5565656",
+    "createdBy":"661ba3fb36c2e4b77d9e2bfb",
+    "imageUrl":"sfdsf"
+}
+###
+
+PUT http://localhost:8000/post/like/6623903f588a24278a29dc84
+Content-Type: application/json
+
+{
+    "userId":"661ba3fb36c2e4b77d9e2bfb",
+    "isLike"    :true
+}
+###
+POST http://localhost:8000/comment
+Content-Type: application/json
+
+{
+    "commentText":"nice post",
+    "post":"66239fe17c23e8edb2b8bf48",
+    "createdAt":"123",
+    "createdBy":"661ba3fb36c2e4b77d9e2bfb"
+}
+###
+DELETE http://localhost:8000/comment/6623b8328b900286383b6bec
